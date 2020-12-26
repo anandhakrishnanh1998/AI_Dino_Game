@@ -10,7 +10,7 @@ def get_files(folder_path):
     return (files)
 
 input_path = "/home/anandhakrishnanh/Scripts/Dino_Game_Bot/data_collection/data/videos/"
-output_path = "/home/anandhakrishnanh/Scripts/Dino_Game_Bot/data_collection/data/frames/"
+output_path = "/home/anandhakrishnanh/Scripts/Dino_Game_Bot/data_collection/data/test/"
 
 files = get_files(input_path)
 print(files)
@@ -34,7 +34,7 @@ for i in files:
     video = cv2.VideoCapture(input_path + i)
     while (True):
         ret, frame = video.read()
-        frame = frame[bb_box[1]:bb_box[3] + bb_box[1], bb_box[0]:bb_box[2] + bb_box[0], :]
+        # frame = frame[bb_box[1]:bb_box[3] + bb_box[1], bb_box[0]:bb_box[2] + bb_box[0], :]
 
         if ret:
             cv2.imwrite(output_path + str(frame_count) + '.png', frame)

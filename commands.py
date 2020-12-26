@@ -2,7 +2,7 @@ import pyautogui
 import os
 from PIL import ImageGrab
 import numpy as np
-
+from os import listdir
 
 def start_dino_game():
     pyautogui.keyDown('ctrlleft')
@@ -33,3 +33,12 @@ def diff_between_images(imageA, imageB):
     err = np.sum((imageA.astype("float") - imageB.astype("float")) ** 2)
     err /= float(imageA.shape[0] * imageA.shape[1])
     return err
+
+def get_files(folder_path):
+    """
+    :param folder_path: Path of any directory
+    :return: List of files/folders in the directory
+    """
+    files = [f for f in listdir(folder_path)]
+    files = sorted(files)
+    return (files)
