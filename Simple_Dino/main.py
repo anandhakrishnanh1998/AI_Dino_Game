@@ -8,7 +8,7 @@ from commands import get_files
 
 ############################# PATHS #######################################
 
-jump_frames_folder = '/home/anandhakrishnanh/Scripts/Dino_Game_Bot/jump_frames/'
+jump_frames_folder = 'jump_frames/'
 
 #############################################################################
 
