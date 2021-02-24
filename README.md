@@ -9,9 +9,9 @@ The objective of this repor is to create a bot that will game the chrome dino ga
 
 **How to use Simple Dino**
 
-1. Open chrome://dino in your chrome window
+1. Open the Chrome web browser
 2. Start the `main.py` in Simple_Dino
-3. Press the 'spacae' or 'up arrow' in your keyboard on the chrome window. 
+3. Switch to the Chrome window
 4. The script will start working after 5 seconds to give you enough time to get ready. 
 
 ## Chrome Dino game using Machine Learning 
